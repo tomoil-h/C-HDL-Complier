@@ -10,8 +10,7 @@ This project runs under Windows, requires Flex and Bison, and builds MinGW envir
    
 it can help you finish front-end and back-end of the compiler automatically.
   
-**Files' structure**     
-
+**Files' structure** 
 tree.h  
   
 is the data structure which the lex and Yacc need.  
