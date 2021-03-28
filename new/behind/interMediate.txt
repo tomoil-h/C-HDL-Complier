@@ -1,0 +1,63 @@
+FUNCTION func :
+PARAM var0
+temp0 := #1
+IF var0 == temp0 GOTO label0
+GOTO label1
+LABEL label0 :
+RETURN var0
+GOTO label2
+LABEL label1 :
+temp2 := #1
+temp3 := var0 - temp2
+ARG temp3
+temp4 := CALL func
+temp5 := var0 * temp4
+var1 := temp5
+RETURN var1
+LABEL label2 :
+FUNCTIONEND func
+FUNCTION changesum :
+PARAM var2
+PARAM var3
+var4 := var2
+var2 := var3
+var3 := var4
+temp6 := var2 + var3
+RETURN temp6
+FUNCTIONEND changesum
+FUNCTION main :
+temp7 := #2
+var5 := temp7
+temp8 := #3
+var6 := temp8
+temp9 := #10
+var7 := temp9
+ARG var6
+ARG var5
+temp10 := CALL changesum
+var8 := temp10
+temp11 := #0
+var9 := temp11
+LABEL label3 :
+IF var9 < var7 GOTO label4
+GOTO label5
+LABEL label4 :
+temp13 := #5
+IF var8 > temp13 GOTO label6
+GOTO label7
+LABEL label6 :
+ARG var8
+temp15 := CALL func
+var8 := temp15
+GOTO label8
+LABEL label7 :
+temp16 := #0
+var8 := temp16
+LABEL label8 :
+temp18 := #1
+var9 := var9 + temp18
+GOTO label3
+LABEL label5 :
+temp19 := #0
+RETURN temp19
+FUNCTIONEND main

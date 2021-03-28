@@ -1,0 +1,64 @@
+FUNCTION and1 :
+PARAM var0
+PARAM var1
+IF var0 == var1 GOTO label0
+GOTO label1
+LABEL label0 :
+temp1 := var0 & var1
+RETURN temp1
+GOTO label2
+LABEL label1 :
+temp2 := var0 + var1
+RETURN temp2
+LABEL label2 :
+FUNCTIONEND and1
+FUNCTION or1 :
+PARAM var2
+PARAM var3
+temp3 := var2 | var3
+RETURN temp3
+FUNCTIONEND or1
+FUNCTION main :
+ARG var5
+ARG var4
+temp4 := CALL and1
+var6 := temp4
+ARG var5
+ARG var4
+temp5 := CALL or1
+var7 := temp5
+temp6 := #0
+RETURN temp6
+FUNCTIONEND main
+FUNCTION and1 :
+PARAM var0
+PARAM var1
+IF var0 == var1 GOTO label0
+GOTO label1
+LABEL label0 :
+temp1 := var0 & var1
+RETURN temp1
+GOTO label2
+LABEL label1 :
+temp2 := var0 + var1
+RETURN temp2
+LABEL label2 :
+FUNCTIONEND and1
+FUNCTION or1 :
+PARAM var2
+PARAM var3
+temp3 := var2 | var3
+RETURN temp3
+FUNCTIONEND or1
+FUNCTION main :
+ARG var5
+ARG var4
+temp4 := CALL and1
+var6 := temp4
+ARG var5
+ARG var4
+temp5 := CALL or1
+var7 := temp5
+temp6 := #0
+RETURN temp6
+FUNCTIONEND main

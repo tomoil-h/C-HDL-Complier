@@ -1,0 +1,21 @@
+module ss(out1,a,b,out2);
+    function [31:0] and1;
+    input [31:0] x;
+    input [31:0] y;
+    if(x==y)
+        and1=x&y;
+        else
+            and1=x+y;
+    endfunction
+    function [31:0] or1;
+    input [31:0] x;
+    input [31:0] y;
+    or1=x|y;
+    endfunction
+    output[31:0] out1;
+    input [31:0] a;
+    input [31:0] b;
+    assign out1=(and1(a,b));
+    output[31:0] out2;
+    assign out2=(or1(a,b));
+endmodule
