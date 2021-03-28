@@ -2,12 +2,14 @@
 Just a toy complier base on the C and HDL,it can finish some basic translation between the 2 languages.  
 
 This project runs under Windows, requires Flex and Bison, and builds MinGW environment.
+  
 **How to Run**  
 1.cd the file‘s dircetory.  
   
 3.makefile.bat
    
-it can help you finish front-end and back-end of the compiler automatically.     
+it can help you finish front-end and back-end of the compiler automatically.
+  
 **Files' structure**     
 
 tree.h  
