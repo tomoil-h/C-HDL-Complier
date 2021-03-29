@@ -6,32 +6,34 @@ This project runs under Windows, requires Flex and Bison, and builds MinGW envir
 **How to Run**  
 1.cd the file‘s dircetory.  
   
-3.makefile.bat
+2.makefile.bat
    
-it can help you finish front-end and back-end of the compiler automatically.
+It can help you finish front-end and back-end of the compiler automatically.
   
 **Files' structure**   
 tree.h  
   
-is the data structure which the lex and Yacc need.  
+Is the data structure which the lex and Yacc need.  
   
 block.h   
   
-can help the the build of code block.  
+Can help the the build of code block.  
   
 lex.l lex.yy.c lex.yy.o   
   
-are the Flex need and produce.  
+Are the Flex need and produce.  
   
 yacc.y y.tab.c y.tab.h   
   
-are the Bison need and produce.  
+Are the Bison need and produce.  
   
 Praser.h interMediate.h codeOptimize.h   
   
-are the files about semantic analysis. 
-  
-what in the behind is the back-end files.  
+Are the files about semantic analysis. 
+
+objectCode.h objectCode.cpp  
+
+the back-end files.  
 
 
 
